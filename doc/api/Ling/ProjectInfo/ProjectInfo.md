@@ -56,7 +56,36 @@ Methods
 - [ProjectInfo::showReport](https://github.com/lingtalfi/ProjectInfo/blob/master/doc/api/Ling/ProjectInfo/ProjectInfo/showReport.md) &ndash; Show a report of the current project.
 
 
+Examples
+==========
 
+Example #1: an html or console report
+------------------------------
+
+The following code:
+
+```php
+$rootDir = "/komin/jin_site_demo";
+$pinfo = new ProjectInfo($rootDir);
+$pinfo->showReport([
+    'followSymlinks' => true,
+]);
+
+```
+
+
+Will print a different output based on the context from which it was printed from.
+
+If it's called from a webserver, it will display the following:
+
+
+![html report](http://lingtalfi.com/img/universe/ProjectInfo/project-info-html-report.png)
+
+
+However, if it's called from a console, it will display the following:
+
+
+![cli report](http://lingtalfi.com/img/universe/ProjectInfo/project-info-cli-report.png)
 
 
 Location
