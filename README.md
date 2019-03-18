@@ -40,7 +40,7 @@ the total weight, the file extensions distribution, ...
 
 
 
-The report is hybrid in that in can be displayed in both a console and/or a web page.
+The report is hybrid in that it can be displayed in both a console and/or a web page.
 
 The following code:
 
